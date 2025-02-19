@@ -1,5 +1,5 @@
 team name : HackTech
-Indranil 
-Divyanshu
-Bhaumik
-Manav 
+Indranil ,
+Divyanshu,
+Bhaumik,
+Manav .
