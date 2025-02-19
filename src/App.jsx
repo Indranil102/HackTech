@@ -10,6 +10,7 @@ function App() {
         <div className='font-bold bg-gray-700 text-gray-50'>
           <p>changes by dp</p>
         </div>
+        <p>Manav</p>
     </>
   )
 }
