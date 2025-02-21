@@ -1,15 +1,15 @@
 
-
+import logo from'../../assets/logo.png'
 const Navbar = () => {
   return (
     <div className="h-[70px] w-full  text-black flex shadow-lg">
       
-      <div className="ml-[100px] flex items-center space-x-2">
-        <img className="" src="" alt="logo" />
-      <h2 className="ml-4">Insight Hunts</h2>
+      <div className="ml-[100px] flex items-center ">
+        <img className="h-9 w-9 rounded-full" src={logo} alt="logo" />
+      <h2 className="ml-1">Insight Hunts</h2>
       
       
-      <ul className="flex space-x-4 ml-[40px] font-medium cursor-pointer">
+      <ul className=" ml-[50px] flex space-x-4   cursor-pointer font-semibold">
       <li>DashBoard</li>
           <li>Analytic </li>
           <li>Report</li>
