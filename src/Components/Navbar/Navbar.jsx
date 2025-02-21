@@ -1,5 +1,6 @@
 
 import logo from'../../assets/logo.png'
+import { CiBellOn } from "react-icons/ci";
 const Navbar = () => {
   return (
     <div className="h-[70px] w-full  text-black flex shadow-lg">
@@ -17,11 +18,8 @@ const Navbar = () => {
       </ul>
       </div>
       <div className="flex items-center space-x-4 ml-[700px] cursor-pointer">
-        <img src="" alt="icon" />
+        {<CiBellOn  size={35}/>} 
         <button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50">Login</button>
-        
-         
-        
       </div>
     </div>
   )
