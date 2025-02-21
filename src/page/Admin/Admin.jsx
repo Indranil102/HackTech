@@ -4,6 +4,7 @@ import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 
 const Admin = () => {
+  var data = "";
   return (
     <div>
         <div className="flex h-screen bg-gray-100">
