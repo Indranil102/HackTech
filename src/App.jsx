@@ -1,9 +1,13 @@
 
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
+<<<<<<< HEAD
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Login from './Components/login/Login';
+=======
+import Admin from './page/Admin/Admin'
+>>>>>>> 7cc6481a11654feccdb94d2d45df78f57480b097
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -13,6 +17,7 @@ const App = () => {
 
   return (
     <>
+<<<<<<< HEAD
     <Navbar />
     <Router>
       <div className="min-h-screen bg-gray-50">
@@ -28,6 +33,10 @@ const App = () => {
         </main>
       </div>
     </Router>
+=======
+      <Navbar />
+      <Admin/>
+>>>>>>> 7cc6481a11654feccdb94d2d45df78f57480b097
     </>
     
   );
