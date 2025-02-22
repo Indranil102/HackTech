@@ -1,5 +1,6 @@
-
+import Login from '../login/Login'
 import logo from'../../assets/logo.png'
+import {Link} from 'react-router-dom'
 import { CiBellOn } from "react-icons/ci";
 const Navbar = () => {
   return (
@@ -19,7 +20,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center space-x-4 ml-[700px] cursor-pointer">
         {<CiBellOn  size={35}/>} 
-        <button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50">Login</button>
+        <Link to={Login}><button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50">Login</button></Link>
       </div>
     </div>
   )
