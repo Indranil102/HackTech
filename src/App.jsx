@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar/Navbar';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Import Navigate
 import Login from './Components/login/Login';
-import Admin from './page/Admin/Admin';
+import Analytic from './page/Analytic/Analytic';
 import Home from './page/Home/Home';
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App">
+      <div className=" bg-gray-100">
         {/* Conditionally render Navbar if not on the login page */}
         {window.location.pathname !== '/login' && <Navbar />}
 
@@ -30,10 +30,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route
-            path="/admin"
+            path="/analytic"
             element={
               <ProtectedRoute user={user}>
-                <Admin />
+                <Analytic />
               </ProtectedRoute>
             }
           />

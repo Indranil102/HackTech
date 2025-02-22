@@ -409,7 +409,7 @@ const Home = () => {
               All
             </button>
             <button
-              className={`p-2 rounded-[10px] flex items-center justify-center transition-colors w-[120px] h-[40px] text-xl font-medium cursor-pointer ${
+              className={`p-2 rounded-[10px] flex items-center justify-center transition-colors w-[124px] h-[40px] text-xl font-medium cursor-pointer ${
                 selectedButton === 2
                   ? "bg-blue-500"
                   : "border border-black bg-transparent"

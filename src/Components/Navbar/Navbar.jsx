@@ -1,4 +1,4 @@
-import Login from '../login/Login'
+
 import logo from'../../assets/logo.png'
 import {Link} from 'react-router-dom'
 import { CiBellOn } from "react-icons/ci";
@@ -14,15 +14,15 @@ const Navbar = () => {
       
       
       <ul className=" ml-[50px] flex space-x-4   cursor-pointer font-semibold">
-      <li>DashBoard</li>
-         <link rel="stylesheet" href="" /> <li>Analytic </li>
+        <Link to="/"><li>DashBoard</li></Link>
+         <Link to="/analytic"><li>Analytic </li></Link>
           <li>Report</li>
           
       </ul>
       </div>
       <div className="flex items-center space-x-4 ml-[700px] cursor-pointer">
         {<CiBellOn  size={35}/>} 
-        <Link to={Login}><button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50 cursor-pointerd">Login</button></Link>
+        <Link to="/Login"><button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50 cursor-pointerd">Login</button></Link>
       </div>
     </div>
 
