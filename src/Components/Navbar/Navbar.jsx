@@ -2,8 +2,10 @@ import Login from '../login/Login'
 import logo from'../../assets/logo.png'
 import {Link} from 'react-router-dom'
 import { CiBellOn } from "react-icons/ci";
+import Admin from '../../page/Admin/Admin';
 const Navbar = () => {
   return (
+    <div>
     <div className="h-[70px] w-full  text-black flex shadow-lg">
       
       <div className="ml-[100px] flex items-center ">
@@ -22,6 +24,10 @@ const Navbar = () => {
         {<CiBellOn  size={35}/>} 
         <Link to={Login}><button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50 cursor-pointerd">Login</button></Link>
       </div>
+    </div>
+
+
+    <Admin></Admin>
     </div>
   )
 }
