@@ -30,10 +30,12 @@ Product Research AI Agent is an intelligent system designed to automate and enha
    git clone https://github.com/Indranil102/HackTech.git
    cd HackTech
 Install dependencies:
-  pip install -r requirements.txt
+  ```bash
+   pip install -r requirements.txt
 
 Run the application:
-  python main.py
+  ```bash
+   python main.py
 
 
 Usage
