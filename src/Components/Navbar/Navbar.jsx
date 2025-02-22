@@ -13,14 +13,14 @@ const Navbar = () => {
       
       <ul className=" ml-[50px] flex space-x-4   cursor-pointer font-semibold">
       <li>DashBoard</li>
-          <li>Analytic </li>
+         <link rel="stylesheet" href="" /> <li>Analytic </li>
           <li>Report</li>
           
       </ul>
       </div>
       <div className="flex items-center space-x-4 ml-[700px] cursor-pointer">
         {<CiBellOn  size={35}/>} 
-        <Link to={Login}><button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50">Login</button></Link>
+        <Link to={Login}><button className="w-[90px] h-[40px] bg-blue-800 rounded text-xl text-amber-50 cursor-pointerd">Login</button></Link>
       </div>
     </div>
   )
