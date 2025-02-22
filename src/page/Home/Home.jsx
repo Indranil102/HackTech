@@ -432,7 +432,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-[40px] p-6 bg-gray-100 border-1 border-gray-200 w-[50%] ml-[200px] ">
+      <div className="mt-[40px] p-6 bg-gray-100 border-1 border-gray-200 w-[64%] ml-[200px] ">
         <div className="flex">
           <h1 className="text-3xl font-bold mb-6 ml-6">Job Postings</h1>
           <h3 className="ml-[430px]">See all</h3>
@@ -454,7 +454,7 @@ const Home = () => {
               {job.skills.map((skill, index) => (
                 <span
                   key={index}
-                  className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                  className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm mr-2"
                 >
                   {skill}
                 </span>
@@ -465,7 +465,7 @@ const Home = () => {
         ))}
           </div>
         
-        <div className="display-fixed">
+        <div className="">
             <Filter />
 
           </div>
