@@ -40,17 +40,6 @@ Usage
 Run the AI agent and input product details.
 View AI-generated insights and comparisons.
 Use the research data to make informed decisions.
-Contributing
-We welcome contributions! Please follow these steps:
-
-Fork the repository.
-Create a new branch (feature-branch).
-Commit your changes and push to your fork.
-Submit a pull request.
-
-Contact
-For any inquiries or support, reach out to the contributors or open an issue in the repository.
 
 
-You can copy and paste this into your `README.md` file on GitHub. Let me know if you need any modifications! 🚀
 
