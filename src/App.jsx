@@ -1,13 +1,13 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+//import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Analytic from './page/Analytic/Analytic';
 import Home from './page/Home/Home';
-import { useAuth0 } from '@auth0/auth0-react';
-import { useEffect } from 'react';
+//import { useAuth0 } from '@auth0/auth0-react';
+//import { useEffect } from 'react';
 
 const App = () => {
-  const { user, loginWithRedirect, logout, isAuthenticated, isLoading, error } = useAuth0();
+  //const { user, loginWithRedirect, logout, isAuthenticated, isLoading, error } = useAuth0();
 
   // Handle errors
   // if (error) {
@@ -58,8 +58,8 @@ const App = () => {
                 //isAuthenticated ? (
                   <Analytic />
                 //) : (
-                  //<Navigate to="/" />
-                //)
+                  //<Navigate to="/" />import './App.css';
+//)           
               }
             />
           </Routes>
@@ -67,6 +67,6 @@ const App = () => {
       </Router>
     </>
   );
-};
+}
 
 export default App;
