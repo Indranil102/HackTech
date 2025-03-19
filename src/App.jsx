@@ -10,25 +10,25 @@ const App = () => {
   const { user, loginWithRedirect, logout, isAuthenticated, isLoading, error } = useAuth0();
 
   // Handle errors
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-  if(isAuthenticated){
-    console.log(user);
-  }
-  // Redirect to login if not authenticated
-  useEffect(() => {
-    if (!isLoading && !isAuthenticated) {
-      loginWithRedirect({
-        appState: { returnTo: '/analytic' }, // Redirect to /analytic after login
-      });
-    }
-  }, [isLoading, isAuthenticated, loginWithRedirect]);
+  // if (error) {
+  //   return <div>Error: {error.message}</div>;
+  // }
+  // if(isAuthenticated){
+  //   console.log(user);
+  // }
+  // // Redirect to login if not authenticated
+  // useEffect(() => {
+  //   if (!isLoading && !isAuthenticated) {
+  //     loginWithRedirect({
+  //       appState: { returnTo: '/home' }, // Redirect to /analytic after login
+  //     });
+  //   }
+  // }, [isLoading, isAuthenticated, loginWithRedirect]);
 
-  // Show a loading indicator while Auth0 is initializing
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  // // Show a loading indicator while Auth0 is initializing
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <>
@@ -36,18 +36,18 @@ const App = () => {
       <Router>
         <div className="bg-gray-100">
           {/* Conditionally render Navbar only if authenticated */}
-          {isAuthenticated && <Navbar user={user} logout={logout} />}
+          {/*isAuthenticated && <Navbar user={user} logout={logout} />*/}
 
           <Routes>
             {/* Public Route */}
             <Route
               path="/"
               element={
-                isAuthenticated ? (
+                // isAuthenticated ? (
                   <Home />
-                ) : (
-                  <Navigate to="/login" />
-                )
+                //) : (
+                  //<Navigate to="/login" />
+                //)
               }
             />
 
@@ -55,11 +55,11 @@ const App = () => {
             <Route
               path="/analytic"
               element={
-                isAuthenticated ? (
+                //isAuthenticated ? (
                   <Analytic />
-                ) : (
-                  <Navigate to="/" />
-                )
+                //) : (
+                  //<Navigate to="/" />
+                //)
               }
             />
           </Routes>

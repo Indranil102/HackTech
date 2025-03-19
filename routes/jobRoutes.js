@@ -29,7 +29,6 @@ router.get('/jobs/search', async (req, res) => {
   }
 
   if (SearchParams.salaryRange) {
-    // Assuming salaryRange is a string like "min-max" (e.g., "50000-100000")
     const [minSalary, maxSalary] = SearchParams.salaryRange.split('-');
     searchQuery['Salary Range'] = { $gte: Number(minSalary), $lte: Number(maxSalary) };
   }
